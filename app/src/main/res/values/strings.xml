@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sticky Notes</string>
+    <string name="my_notes">My Notes</string>
+    <string name="reminder">Reminder</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="search_your_notes">Search Your Notes!</string>
+    <string name="search_your_reminder">Search Your Reminder!</string>
+    <string name="search_your_shop_list">Search Your Shop List!</string>
+    <string name="shop_list">Shop List</string>
+    <string name="current_date">Current Date</string>
+    <string name="save">Save</string>
+    <string name="type_your_note_here">Type Your Note Here...</string>
+    <string name="note_title">Note Title</string>
+    <string name="click_me">Click Me</string>
+    <string name="pick_color">Pick Color</string>
+    <string name="your_reminder_here">Your Reminder Here...</string>
+    <string name="pick_your_sticky_n_note_color">Pick Your Sticky\n Note Color</string>
+    <string name="type_your_shopping_list_here">Type Your Shopping List Here...</string>
+    <string name="heading">Heading</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="add_image">Add Image</string>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E"
+    tools:context="com.ateeqoye.stickynotes.activities.AddNewShoppingListActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+            <TextView
+                android:id="@+id/save_shoppingList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_save_btn"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:padding="7dp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDateTimeList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_back"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:includeFontPadding="false"
+                android:text="@string/current_date"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_note_title_list"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/textDateTimeList"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15sp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:hint="@string/note_title"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="30sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_note_title_list"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/notes_design"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/sticky_note_design"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/text_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/averia_gruesa_libre"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:maxLines="10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:hint="@string/type_your_shopping_list_here"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/notes_design"
+                    app:layout_constraintVertical_bias=".25"
+                    app:layout_constraintWidth_percent=".7"
+                    android:paddingBottom="8dp"
+                    android:inputType="textMultiLine"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
